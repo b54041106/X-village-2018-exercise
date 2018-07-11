@@ -50,16 +50,16 @@ print(f(5))
 
 ##Arguments
 #Exercise2: carbon_foot_Method1
-def maker(n):
+def maker1(n):
     def action(x): # Generate and return action
         return x * n # action retains N from enclosing scope return action
     return action
 
-b= maker(0.03) # Pass 2 to argument N
+b= maker1(0.03) # Pass 2 to argument N
 print(b(100))
-c= maker(0.24)
+c= maker1(0.24)
 print(c(100))
-s= maker(0.06)
+s= maker1(0.06)
 print(s(100))
 
 #Exercise2: carbon_foot_Method2
@@ -84,14 +84,14 @@ print('Car:',Car)
 
 #Recursive Function
 #exercise1:recursive_1
-def f(n):
+def t(n):
     print('n:',n) # Trace recursive levels
     if n==1:
         return 1 
     else:
-        return f(n-1)*n
+        return t(n-1)*n
 
-print('answer: ',f(10))
+print('answer: ',t(10))
 
 #exercise2: recursive_2 
 def F(n):
