@@ -32,4 +32,3 @@ except RelationException as e:
     
 except Exception as e:
     print("Are you sure that "+p1+" and "+p2+" are in love with each other?")
-
